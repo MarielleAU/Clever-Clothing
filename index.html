@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clever Clothing</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav-logo">
+        <div class="logo-box">
+            <img src="logo.png.png" alt="CL" class="logo-image">
+        </div>
+        <span>CLEVER CLOTHING</span>
+    </div>
+
+    <div id="welcome" class="middle">
+        <div class="content">
+            <h1>Welcome to Clever Clothing!</1>
+            <p>Here we have the latest collection of premium quality apparel. <br>
+                What would you like to do?</p>
+            <button class="cta-btn" onclick="user()">Buy</button>
+            <button class="cta-btn" onclick="admin()">Sell</button>
+        </div>
+    </div>
+
+    <script>
+        function user() {
+            window.location.assign("user.html");
+        }
+        function admin() {
+            window.location.assign("admin.html");
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+
+</html>
