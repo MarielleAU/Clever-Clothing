@@ -1803,7 +1803,7 @@ class AdminDashboard {
         await window.sb.from("invoices").insert({
           order_id: orderId,
           invoice_number: "INV_" + Date.now(),
-          type: "real",
+          type: "pre",
           amount: order.total,
           status: "generated",
           customer_name: order.customer.name,
